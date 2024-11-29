@@ -1,0 +1,932 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+/* header start */
+/* head start */
+#head{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-size: small;
+    border: none;
+}
+.app{
+    width:30px;
+    height: 30px;
+    padding: 5px;
+    
+}
+ #callbtn{
+    background-color:#a0d468 ; 
+    font-weight: bold;
+    font-size: 12px; 
+    margin: 5px;
+    padding: 5px;
+    border: none;
+} 
+.app:hover{
+    cursor: pointer;
+    padding:6px;
+}
+#callbtn:hover{
+    cursor: pointer;
+}
+/* head end */
+/* navbar start */
+
+navbar{
+   display: flex;
+   justify-content:space-around;
+   font-size: 15px;
+   border: none;
+   margin: 0;
+   text-align: center;
+ }
+ #link{
+    display: flex;
+    list-style-type: none;   
+}
+#nav_links {
+    padding: 10px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+#display_sm{
+  display: none;
+}
+
+#nav_links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 5px; 
+    background-color: #f9a825;
+    transition: width 0.3s ease;
+}
+#nav_links:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+#nav_links:hover::after{
+    width: 100%; 
+}
+#sliderbtn:hover{
+  padding: 8px;
+  width: 130px;
+  box-shadow: 0px 0px 5px #f9a825;
+
+}
+/* navbar end */
+/* header end */
+/* section start */
+/* slider start */
+#sm-pic{
+  display:none;
+  }
+#slider{
+    height: 450px;
+}
+.slide_hadding{
+    text-transform: uppercase;
+    font-size: 60px;
+}
+#sliderbtn:hover{
+   padding: 8px;
+   width: 100px;
+}
+
+/* slider end */
+/* advantages start */
+#main_hadding{
+    margin: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #407704;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+#firstword{
+    color: black;
+}
+#para_after_hadding{
+    text-align: center;
+    font-weight: bold;
+    color: darkgrey;
+}
+#flex_div{
+    display: flex;
+    padding: 30px;
+    margin: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.img_para{
+    color: darkgray;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+.advant_img{
+    width: 100px;
+    height: 100px;
+}
+/* advantages done */
+/* about us start */
+#about_container{
+   background-color: #D1D3D4;  
+   background-image: url('./assets/about\ image.png');
+   height: 450px; 
+   background-repeat: no-repeat; 
+   background-position: 400px;
+   margin-top: 20px;
+   box-shadow: darkgray 3px 3px 3px;
+}
+#about_div{
+    margin-right: 500px;
+    padding: 10px;
+}
+#about_btn{
+   width: 160px;
+   height: 45px;
+   text-align: center;
+}
+#about_btn:hover{
+ box-shadow: 3px 3px 3px black;
+}
+/* about end */
+/* service portion */
+.service_divs{
+    border: #e9ebec ;
+    background-color: #ebecec;
+    margin: 10px;
+    height: 260px; 
+}
+.str_img{
+    width: 60px;
+    height: 60px; 
+    margin: 10px;
+}
+.img_para{
+  padding-left: 10px ;
+  padding-right: 10px;
+}
+#service_btn{
+   border: none;
+}
+#service_btn:hover{
+  text-decoration: underline;
+ }
+
+/* portfolio section */
+#portfolio_section{
+    background-color: black;
+    height: 600px;
+}
+#portfolio_links{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    color: darkgrey;
+    text-transform: uppercase;
+}
+#portfolio_option:hover{
+    color: #f9a825;
+    cursor: pointer;
+}
+li{
+    padding: 10px;
+}
+#portfolio_imges{
+    padding: 20px;
+    text-align: center; 
+}
+#port_img{
+    height: 150px;
+    width: 180px;
+}
+#port_img:hover{
+   padding: 20px;
+}
+/* portfolio end */
+/* process start */
+#process_img{
+   width: 950px;
+   margin: 20px;
+   margin-bottom: 0;
+
+}
+#our_process{
+  text-align: center;
+}
+#processes{
+    display: flex;
+    color: darkgray;
+}
+
+.process-div-h5{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+}
+.process-div-p{
+    text-align: center;
+    font-size: 10px;
+}
+
+/* people about us */
+#people-about-us{
+    background-color: #dfe2e2;
+    height: 500px;
+    box-shadow: 0px 0px 5px #7b7e7e;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* 2 columns */
+    grid-template-rows: 1fr 1fr;     /* 2 rows */
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    position: relative;
+  }
+  
+  .team-section {
+    display: contents;
+  }
+  
+  .member {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .member::after, .member::before {
+    content: "";
+    position: absolute;
+    background-color: #afafaf; /* Line color */
+  }
+  
+  .member:nth-child(1)::after,
+  .member:nth-child(2)::after {
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    
+  }
+  
+  .member:nth-child(1)::before,
+  .member:nth-child(3)::before {
+    width: 2px;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+  .avatar{
+    position: absolute;
+    margin-left: 0;
+  }
+  .people-data{
+    margin-left: 100px;
+    font-size: 12px;
+  }
+ 
+  .profile-image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+  }
+  /* SKILLS */
+  #skill-percent{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .percentage{
+    width: 150px;
+    height: 150px;
+  }
+  /* form  */
+  #form{
+    background-color:#81c737 ;
+    color: white;
+    margin:20px 0 20px 0;
+    padding: 20px;
+  }
+  #selection-hadding{
+    font-size: 50px;
+    text-align: center;
+    font-family: unset;
+    text-transform: uppercase;
+  }
+  #takeinfo{
+    margin: 15px 50px 15px 50px;
+    text-align: center;
+  }
+  input{
+   padding: 10px;
+   border: none;
+   border-radius: 5px;  
+  }
+  input:hover{
+    outline: none;
+    box-shadow: 0px 0px 5px ;
+  }
+  #request-btn{
+    padding: 10px;
+   border: none;
+   border-radius: 5px; 
+   width: 150px;
+   background-color: #f9a825;
+   margin: 10px;
+  }
+  #request-btn:hover{
+    box-shadow: 0px 0px 5px #f9a825 ;
+    padding: 12px;
+  }
+  #form-para{
+    text-align: center;
+  }
+  /* contact us */
+  #contact-para{
+    text-align: center;
+    font-size: 18px;
+  }
+ #detailabout-contact{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+ }
+ /* footer */
+    footer{
+      background-color: #81c737;
+      display: flex;
+      color: aliceblue;
+      text-align: center;
+      justify-content: center;
+      font-size: 13px;
+      gap: 30px;
+      padding: 20px;
+    }
+    .address{
+      display: flex;
+      flex-flow: column;
+      text-align: left;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .numbers{
+      display: flex;
+      flex-flow: column;
+      padding: 20px;
+    }
+    .foot-hadding{
+      font-size: 24px;
+      font-family:unset;
+      padding-bottom: 20px;
+
+    }
+    #foot-inner-h5{
+      font-family:unset;
+      font-size: 20px;
+    }
+    .address-link{
+      color: aliceblue;
+    }
+    .address-link:hover{
+      color: aliceblue;
+      font-size: 14px;
+    }
+    #creatline{
+      position: relative;
+    }
+    #creatline::before,
+    #creatline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 1px; 
+    height: 100%; 
+    background-color:rgb(189, 250, 149);
+    }
+
+   #creatline::before {
+    left: 0; 
+   }
+
+   #creatline::after {
+    right: 0;
+   }
+   /* now we can responsive the website */
+   @media(min-width: 400px) and (max-width: 600px){
+    body{
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+    }
+    #head{
+      font-size: 10px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .app{
+      width:20px;
+      height: 20px;
+      padding: 3px;  
+    }
+    #callbtn{
+     display:none;
+  }
+  #nav_links {
+    display: none;
+}
+#display_sm{
+ display: flex;
+ display: block;
+ margin: 20px;
+ font-weight: bold;
+ font-family: initial;
+ font-size: 20px;
+ margin-right: 30px;
+}
+#main_slide-porion{
+    display: none;
+}
+#sm-pic{
+  display:block;
+  width:100%;
+  height: 400px;
+}
+
+#main_hadding{
+  margin: 10px;
+  margin-bottom: 0%;
+}
+#para_after_hadding{
+  font-size: 10px;
+  text-align: center;
+}
+.img_para{
+  font-size: 8px;
+}
+.advant_img{
+  width: 80px;
+  height: 80px;
+}
+.advent_hadding{
+  font-size: 12px;
+}
+#about_container{
+  height: 400px; 
+  background-image: none;
+ 
+}
+#about_div{
+  margin: 20px;
+  font-size: 12px;
+}
+
+.service_divs{
+  margin: 10px;
+  height: 180px; 
+}
+.str_img{
+  width: 30px;
+  height: 30px; 
+  margin: 5px;
+}
+.img_para{
+padding-left: 8px ;
+padding-right: 8px;
+}
+.service_para{
+  font-size: 12px;
+}
+#service_btn{
+  font-size: 8px;
+}
+#portfolio_links{
+  font-size: 12px;
+}
+#port_img{
+  height: 90px;
+  width: 90px;
+}
+#portfolio_section{
+  height: 450px;
+}
+#processes{
+  width:400px ;
+  margin: auto;
+}
+#our_process{
+  text-align: center;
+}
+#process_img{
+  width: 400px;
+}
+
+.process-div-h5{
+   font-size: 8px;
+}
+.process-div-p{
+   font-size: 5px;
+}
+.people-data{
+  margin-left: 70px;
+  font-size: 8px;
+}
+#people-about-us{
+  height: auto;
+  padding: 2px;
+}
+
+.profile-image{
+  width: 40px;
+  height: 40px;
+}
+.percentage{
+  width: 80px;
+  height: 80px;
+}
+.skill_h6{
+  font-size: 10px;
+
+}
+.map{
+  height:300px;
+}
+footer{
+  width: 100%;
+  font-size: 8px;
+  gap: 10px;
+  padding:8px ;
+}
+#foot-logo{
+  width: 60px;
+  height: 50px;
+}
+.foot-hadding{
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.address{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.numbers{
+  display: flex;
+  flex-flow: column;
+  padding: 8px;
+}
+.foot-inner-h5{
+  font-size: 10px;
+}
+.address-link:hover{
+  font-size: 9px;
+}
+}
+@media(min-width:601px) and (max-width:800px){
+  #head{
+    font-size: 12px;
+}
+.app{
+    width:25px;
+    height: 25px;
+    padding: 3px;
+}
+ #callbtn{
+    font-size: 10px; 
+} 
+#sm-pic{
+display:block;
+width:100%;
+height: 400px;
+}
+#main_slide-porion{
+  display: none;
+}
+#about_div{
+  margin: 15px;
+  margin-right: 285px;
+  font-size: 13px;
+}
+#about_container{
+  background-position: 350px;
+}
+
+#port_img{
+  height: 130px;
+  width: 130px;
+}
+#portfolio_section{
+  height: auto;
+}
+#portfolio_links{
+  font-size: 12px;
+}
+.service_divs{
+  margin: 10px;
+  height: 190px; 
+}
+.str_img{
+  width: 30px;
+  height: 30px; 
+  margin: 5px;
+}
+.img_para{
+padding-left: 8px ;
+padding-right: 8px;
+}
+.service_para{
+  font-size: 12px;
+}
+#service_btn{
+  font-size: 10px;
+}
+#processes{
+  width:650px ;
+  margin: auto;
+}
+#our_process{
+  text-align: center;
+}
+#process_img{
+  width: 600px;
+}
+
+.process-div-h5{
+   font-size: 15px;
+}
+.process-div-p{
+   font-size: 10px;
+}
+#nav_links {
+  font-size: 12px;
+  padding: 10px;
+}
+#people-about-us{
+  height: auto;
+}
+
+#main_hadding{
+  margin: 8px;
+  margin-bottom: 0%;
+}
+#para_after_hadding{
+  font-size: 12px;
+  text-align: center;
+}
+.map{
+  height:300px;
+}
+footer{
+  width: 100%;
+  font-size: 8px;
+  gap: 20px;
+  padding:5px ;
+}
+#foot-logo{
+  width: 70px;
+  height: 60px;
+}
+.foot-hadding{
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.address{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.numbers{
+  display: flex;
+  flex-flow: column;
+  padding: 8px;
+}
+.foot-inner-h5{
+  font-size: 10px;
+}
+.address-link:hover{
+  font-size: 9px;
+}
+.percentage{
+  width: 100px;
+  height: 100px;
+}
+.skill_h6{
+  font-size: 15px;
+}
+.advant_img{
+  width: 100px;
+  height: 100px;
+}
+.advent_hadding{
+  font-size: 15px;
+}
+.profile-image{
+  width: 50px;
+  height: 50px;
+}
+.people-data{
+  margin-left: 70px;
+  font-size: 10px;
+}
+}
+
+  
+   
+@media(min-width:801px) and (max-width:992px){
+#sm_pic{
+    display:none;
+}
+#about_div{
+  margin: 10px;
+  margin-right: 450px;
+  font-size: 13px;
+}
+#about_container{
+  background-position: 365px;
+}
+.advant_img{
+  width: 120px;
+  height: 120px;
+}
+.advent_hadding{
+  font-size: 15px;
+}
+.profile-image{
+  width: 100px;
+  height: 100px;
+}
+#portfolio_section{
+  height: auto;
+}
+.people-data{
+  margin-left: 100px;
+  font-size: 12px;
+}
+.profile-image{
+  width: 160px;
+  height: 160px;
+}
+#processes{
+  width:850px ;
+  margin: auto;
+}
+#our_process{
+  text-align: center;
+}
+#process_img{
+  width: 800px;
+}
+
+.process-div-h5{
+   font-size: 20px;
+}
+.process-div-p{
+   font-size: 12px;
+}
+#nav_links {
+  font-size: 15px;
+  padding: 10px;
+}
+#people-about-us{
+  height: auto;
+  padding: 10px;
+}
+.profile-image{
+  width: 80px;
+  height: 80px;
+}
+
+}
+@media(min-width:993px) and (max-width:1200px){
+#sm_pic{
+    display:none;
+}
+#Logo{
+  width:"100px" ;
+  height:"80px";
+
+}
+#about_div{
+  margin: 5px;
+  margin-right: 520px;
+  font-size: 15px;
+  font-weight: bold;
+}
+ #about_container{
+  background-position: 515px;
+}
+#portfolio_section{
+  height: auto;
+}
+#port_img{
+  height: 170px;
+  width: 186PX;
+}
+#processes{
+  width: 1020px;
+  margin: auto;
+ 
+}
+#our_process{
+  text-align: center;
+}
+#process_img{
+  width: 995px;
+}
+
+.process-div-h5{
+   font-size: 20px;
+}
+.process-div-p{
+   font-size: 12px;
+}
+}
+  
+   
+@media(min-width:1200px){
+  #sm_pic{
+      display:none;
+  }
+  #Logo{
+    width:"120px" ;
+    height:"100px";
+  
+  }
+  #about_div{
+    margin: 5px;
+    margin-right: 480px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+   #about_container{
+    background-position: 700px;
+  }
+  #portfolio_section{
+    height: auto;
+  }
+  #port_img{
+    height: 200px;
+    width: 230PX;
+  }
+  #processes{
+    width: 999px;
+    margin: auto;
+  }
+  #our_process{
+    text-align: center;
+  }
+  #process_img{
+    width: 999px;
+  }
+  
+  .process-div-h5{
+     font-size: 25px;
+  }
+  .process-div-p{
+     font-size: 15px;
+  }
+  footer{
+    width: 100%;
+    font-size: 15px;
+    gap: 2px;
+    padding:2px ;
+    
+  }
+  #foot-logo{
+    width: 120px;
+    height: 100px;
+  }
+  .foot-hadding{
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .address{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .foot-inner-h5{
+    font-size: 20px;
+  }
+  .address-link:hover{
+    font-size: 12px;
+  }
+  }
+    
+     
